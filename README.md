@@ -121,15 +121,6 @@ npm run preview
 
 ![Section Skills dan Gallery](docs/screenshots/07-skills-gallery.png)
 
-<br>
-
-### 8. Tampilan Responsive (Mobile)
-<!-- perkecil browser / device toolbar (F12), tampilkan menu hamburger terbuka -->
-
-![Tampilan mobile](docs/screenshots/08-mobile.png)
-
-<br>
-
 ---
 
 ## Catatan
