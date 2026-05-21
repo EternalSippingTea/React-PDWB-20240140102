@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf \"/d/Farhan Visual Code/SMT 4 - Desain Web/_laporan_build\")",
+      "Read(//d/Farhan Visual Code/SMT 4 - Desain Web//**)"
+    ]
+  }
+}

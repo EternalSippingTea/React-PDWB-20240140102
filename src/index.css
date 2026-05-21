@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-miyabi-night text-white font-sans antialiased overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .text-gradient-ice {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #9ED7E8 0%, #5BC0EB 50%, #ffffff 100%);
+  }
+  .text-gradient-blade {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #ffffff 0%, #9ED7E8 50%, #D43F3F 100%);
+  }
+  .glass {
+    background: rgba(10, 22, 40, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(158, 215, 232, 0.12);
+  }
+  .shimmer-border {
+    position: relative;
+  }
+  .shimmer-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(120deg, transparent 30%, rgba(158, 215, 232, 0.6), transparent 70%);
+    background-size: 200% 100%;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    animation: shimmer 3s linear infinite;
+    pointer-events: none;
+  }
+}
+
+/* Decorative scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050B17;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #5BC0EB, #0A1628);
+  border-radius: 4px;
+}
+
+/* Snowflake/ice particles background */
+.ice-bg {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(91, 192, 235, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(158, 215, 232, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(212, 63, 63, 0.05) 0%, transparent 60%);
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(158, 215, 232, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(158, 215, 232, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}

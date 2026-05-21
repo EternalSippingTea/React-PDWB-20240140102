@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="c" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9ED7E8"/>
+      <stop offset="100%" stop-color="#5BC0EB"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="#050B17" stroke="url(#c)" stroke-width="3"/>
+  <circle cx="100" cy="100" r="76" fill="none" stroke="#5BC0EB" stroke-opacity="0.4" stroke-width="1.5"/>
+  <path d="M100 30 L100 170 M40 70 L160 130 M160 70 L40 130" stroke="#5BC0EB" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="100" y="108" font-family="serif" font-size="72" fill="url(#c)" text-anchor="middle" dominant-baseline="middle">六</text>
+  <text x="100" y="160" font-family="sans-serif" font-size="13" fill="#9ED7E8" fill-opacity="0.7" text-anchor="middle" letter-spacing="4">SECTION 6</text>
+</svg>
